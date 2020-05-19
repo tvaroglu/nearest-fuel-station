@@ -1,0 +1,12 @@
+<section>
+  <section class="navbar-header">
+    <p class ="navbar-title">Nearest Fuel Station</p>
+    <p class="navbar-subtitle">Search For The Nearest Electric Charging Station</p>
+  </section>
+  <section class="navbar-search-form">
+    <%= form_tag(search_path, method: "get") do %>
+      <%= select_tag(:location, options_for_select(location_list), {class: "select-field"}) %>
+      <%= submit_tag('Find Nearest Station', class: "button") %>
+    <% end %>
+  </section>
+</section>
