@@ -97,7 +97,6 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (4.0.4)
-dependabot/bundler/puma-3.12.6
     puma (3.12.6)
     rack (2.2.3)
     rack-test (1.1.0)
