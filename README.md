@@ -4,7 +4,7 @@
 
 Ruby 2.5.3
 
-Rails 5.1.7
+Rails 5.2.4.3
 
 ### Set Up
 
