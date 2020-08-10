@@ -208,8 +208,8 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   pry
-  puma (~> 3.7)
   rails (~> 5.2.4.3)
+  puma (~> 3.12)
   rspec-rails
   sass-rails (~> 5.0)
   tzinfo-data
