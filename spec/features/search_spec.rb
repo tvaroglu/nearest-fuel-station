@@ -14,14 +14,24 @@ describe 'search results' do
   # - Access Times
 # I should also see:
   # - the distance of the nearest station (should be 0.1 miles)
-  # - the travel time from Turing to that fuel station (should be 1 min)
+  # - the travel time from Griffin Coffee to that fuel station (should be 1 min)
   # - The direction instructions to get to that fuel station
   # "Turn left onto Lawrence St Destination will be on the left"
   it 'can search for the nearest station' do
     visit root_path
 
+    select 'Griffin Coffee', from: :location
     click_on 'Find Nearest Station'
 
     expect(page).to have_content 'Results:'
+    # save_and_open_page
+    expect(page).to have_css('#name')
+    expect(page).to have_css('#address')
+    expect(page).to have_css('#fuel_type')
+    expect(page).to have_css('#access_times')
+
+    expect(page).to have_css('#distance')
+    expect(page).to have_css('#travel_time')
+    expect(page).to have_css('#directions')
   end
 end

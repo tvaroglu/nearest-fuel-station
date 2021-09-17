@@ -1,6 +1,8 @@
 class SearchController < ApplicationController
   def index
-    require "pry"; binding.pry
+    station = ApiFacade.nearest_station(params[:location]).first
+    directions = ApiFacade.directions_from(params[:location], station.address)
+    # require "pry"; binding.pry
   end
 
   def example_params_REMOVE
