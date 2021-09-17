@@ -9,7 +9,7 @@ class Station
   end
 
   def full_address(station_attributes)
-    ("#{station_attributes[:street_address]}, #{station_attributes[:city]}, #{station_attributes[:state]}").delete! '.'
+    ("#{station_attributes[:street_address]}, #{station_attributes[:city]}, #{station_attributes[:state]}")
   end
 
   def full_fuel_type(station_attributes)
