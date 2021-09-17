@@ -16,12 +16,17 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap'
 
+gem 'faraday'
+gem 'json'
+
 group :development, :test do
   gem 'pry'
+  gem 'figaro'
 end
 
 group :test do
   gem 'rspec-rails'
+  gem 'simplecov'
   gem 'capybara'
   gem 'launchy'
   gem 'vcr'
